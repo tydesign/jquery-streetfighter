@@ -24,16 +24,30 @@ $(document).ready(function() {
 	.mouseup(function() {
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
-	})
-	.keydown(function(e) {
+	});
+
+
+	$('body').keydown(function(e) {
 		if (e.which === 88) {
-			alert ('x is pressed');
-			//$('.ryu-cool').show();
+			//alert ('x is pressed');
+			$('.ryu div').hide();
+			$('.ryu-cool').show();
+			//still not working
+		}
+	})
+	.keyup(function(e) {
+		if (e.which === 88) {
+			$('.ryu div').hide();
+			$('.ryu-still').show();
 		}
 	});
+
+
 function playHadouken () {
 	$('#hadouken-sound')[0].volume = 0.5;
 	$('#hadouken-sound')[0].load();
 	$('#hadouken-sound')[0].play();
 	}
+
+
 });
