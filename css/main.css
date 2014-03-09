@@ -16,6 +16,7 @@ body {
 
 .ryu {
 	float: left;
+  width: 400px;
 }
 
 .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
@@ -56,4 +57,18 @@ body {
   top: 167px;
   left: -212px;
   float: left;
+  z-index: 10000;
+}
+
+.instructions {
+  float: right;
+  margin-right: 200px;
+  padding-top: 40px;
+}
+
+.instructions p {
+  font-family: 'Kaushan Script', 'Comic Sans MS', helvetica, arial, sans-serif;
+  font-size: 1.25em;
+  margin-bottom: 20px;
+  line-height: 1.25;
 }
