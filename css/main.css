@@ -16,15 +16,14 @@ body {
 
 .ryu {
 	float: left;
-  width: 400px;
+  width: 600px;
 }
 
 .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
-  width: 659px;
   height: 494px;
 }
 
-.ryu-ready, .ryu-throwing, .ryu-cool {
+.ryu-ready, .ryu-throwing, .ryu-cool, .title-screen {
   display: none;
 } 
 
@@ -44,7 +43,14 @@ body {
   background-image: url('../images/ryu-cool.gif');
 }
 
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+.title-screen {
+  background-image: url('../images/streetfighter-logo.jpg');
+  display: inline-block;
+  width: 600px;
+  height: 494px;
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .title-screen {
   background-repeat: no-repeat;
 }
 
@@ -57,7 +63,6 @@ body {
   top: 167px;
   left: -212px;
   float: left;
-  z-index: 10000;
 }
 
 .instructions {
