@@ -1,9 +1,9 @@
 $(document).ready(function() {
-	$('.instructions').hide();
-	$('.title-screen').hide();
-	$('.title-screen').fadeIn(function(){
-		$('title-screen').fadeIn();
-		)};
+	//$('.instructions').hide();
+	//$('.title-screen').hide();
+	//$('.title-screen').fadeIn(function(){
+	//$('title-screen').fadeIn();
+	//	)};
 	$('.ryu').mouseenter(function() {
 		$('.ryu div').hide();
 		$('.ryu-ready').show();
